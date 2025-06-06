@@ -104,39 +104,47 @@
 [Architectury Transformer DEBUG]  - /home/irontom10/.gradle/caches/modules-2/files-2.1/org.lwjgl/lwjgl-openal/3.3.1/2623a6b8ae1dfcd880738656a9f0243d2e6840bd/lwjgl-openal-3.3.1.jar
 [Architectury Transformer DEBUG]  - /home/irontom10/.gradle/caches/fabric-loom/minecraftMaven/net/minecraft/forge-1.20.1-47.4.0-minecraft-merged/1.20.1-loom.mappings.1_20_1.layered+hash.40359-v2-forge-1.20.1-47.4.0/forge-1.20.1-47.4.0-minecraft-merged-1.20.1-loom.mappings.1_20_1.layered+hash.40359-v2-forge-1.20.1-47.4.0.jar
 [Architectury Transformer DEBUG]  - /home/irontom10/git/freespawn/.gradle/loom-cache/remapped_mods/loom_mappings_1_20_1_layered_hash_40359_v2_forge_1_20_1_47_4_0_forge/dev/architectury/architectury-forge/9.2.14/architectury-forge-9.2.14.jar
-[Architectury Transformer] Read classpath in 1.980 s
+[Architectury Transformer] Read classpath in 1.966 s
 [Architectury Transformer DEBUG] Closed File Systems for /home/irontom10/git/freespawn/common/build/devlibs/freespawn-common-1.0.0-dev.jar
-[Architectury Transformer DEBUG] Transforming 8 transformer(s) from /home/irontom10/git/freespawn/common/build/devlibs/freespawn-common-1.0.0-dev.jar to /tmp/6174648038056656716.jar: 
-[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.RuntimeMixinRefmapDetector@5505ae1a
-[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.TransformExpectPlatform@73cd37c0
-[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.RemapInjectables@21337f7b
-[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.TransformPlatformOnly@2bb3058
-[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.TransformForgeAnnotations@7a362b6b
-[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.TransformForgeEnvironment@60df60da
-[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.GenerateFakeForgeMod@5a2d131d
-[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.FixForgeMixin@14fc1f0
-[Architectury Transformer DEBUG] Transforming from /home/irontom10/git/freespawn/common/build/devlibs/freespawn-common-1.0.0-dev.jar to /tmp/6174648038056656716.jar with 8 transformer(s) on dev.architectury.transformer.handler.SimpleTransformerHandler
+[Architectury Transformer DEBUG] Transforming 8 transformer(s) from /home/irontom10/git/freespawn/common/build/devlibs/freespawn-common-1.0.0-dev.jar to /tmp/5821566804743901309.jar: 
+[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.RuntimeMixinRefmapDetector@46c670a6
+[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.TransformExpectPlatform@59fc684e
+[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.RemapInjectables@5ae81e1
+[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.TransformPlatformOnly@2fd1731c
+[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.TransformForgeAnnotations@5ae76500
+[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.TransformForgeEnvironment@6063d80a
+[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.GenerateFakeForgeMod@1133ec6e
+[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.FixForgeMixin@355e34c7
+[Architectury Transformer DEBUG] Transforming from /home/irontom10/git/freespawn/common/build/devlibs/freespawn-common-1.0.0-dev.jar to /tmp/5821566804743901309.jar with 8 transformer(s) on dev.architectury.transformer.handler.SimpleTransformerHandler
 [Architectury Transformer DEBUG] Remapping with 1 mapping provider(s):
-[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.TransformForgeEnvironment$$Lambda/0x0000794e9408d4b8@2e1ef60
+[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.TransformForgeEnvironment$$Lambda/0x000072565c08d4b8@200a26bc
 [Architectury Transformer DEBUG] Remapping Classes:
 [Architectury Transformer DEBUG] net/fabricmc/api/EnvType -> net/minecraftforge/api/distmarker/Dist
 [Architectury Transformer DEBUG] net/fabricmc/api/Environment -> net/minecraftforge/api/distmarker/OnlyIn
 [Architectury Transformer DEBUG] Found class transformer
+[Architectury Transformer DEBUG] Writing com/irontom10/ModItems with maxs=true frames=true
 [Architectury Transformer DEBUG] Writing com/irontom10/main with maxs=true frames=true
+[Architectury Transformer DEBUG] Writing com/irontom10/datagen/ModBlockStateProvider with maxs=true frames=true
+[Architectury Transformer DEBUG] Writing com/irontom10/datagen/ModItemTagGenerator with maxs=true frames=true
+[Architectury Transformer DEBUG] Writing com/irontom10/datagen/ModBlockTagGenrator with maxs=true frames=true
+[Architectury Transformer DEBUG] Writing com/irontom10/datagen/DataGenerators with maxs=true frames=true
+[Architectury Transformer DEBUG] Writing com/irontom10/datagen/ModLootTableProvider with maxs=true frames=true
+[Architectury Transformer DEBUG] Writing com/irontom10/datagen/ModItemModelProvider with maxs=true frames=true
+[Architectury Transformer DEBUG] Writing com/irontom10/datagen/ModRecipeProvider with maxs=true frames=true
 [Architectury Transformer DEBUG] Checking whether /freespawn.mixins.json is a mixin config.
 [Architectury Transformer DEBUG] Checking whether /freespawn.mixins.json is a mixin config.
 [Architectury Transformer DEBUG] Found mixin config(s): freespawn.mixins.json
 [Architectury Transformer DEBUG] Appended Launch Argument: [--mixin.config, freespawn.mixins.json]
 [Architectury Transformer DEBUG] Remapping refmap from intermediary to srg: freespawn-forge-forge-refmap.json
-[Architectury Transformer DEBUG] Closed File Systems for /tmp/6174648038056656716.jar
+[Architectury Transformer DEBUG] Closed File Systems for /tmp/5821566804743901309.jar
 [Architectury Transformer] Listening at /home/irontom10/git/freespawn/common/build/devlibs/freespawn-common-1.0.0-dev.jar
-[Architectury Transformer DEBUG] Temporary jar [/tmp/6174648038056656716.jar] contains packages: com.irontom10
+[Architectury Transformer DEBUG] Temporary jar [/tmp/5821566804743901309.jar] contains packages: com.irontom10, com.irontom10.datagen
 [Architectury Transformer DEBUG] Closed File Systems for /home/irontom10/git/freespawn/common/build/devlibs/freespawn-common-1.0.0-dev.jar
 [Architectury Transformer DEBUG] Classpath entry [/home/irontom10/git/freespawn/forge/build/classes/java/main] contains packages: com.irontom10.forge
 [Architectury Transformer DEBUG] Classpath entry [/home/irontom10/git/freespawn/forge/build/resources/main] contains packages: 
 [Architectury Transformer DEBUG] Transforming from com/irontom10/main.class to com/irontom10/main.class with 8 transformer(s) on dev.architectury.transformer.handler.TinyRemapperPreparedTransformerHandler
 [Architectury Transformer DEBUG] Remapping with 1 mapping provider(s):
-[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.TransformForgeEnvironment$$Lambda/0x0000794e9408d4b8@2e1ef60
+[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.TransformForgeEnvironment$$Lambda/0x000072565c08d4b8@200a26bc
 [Architectury Transformer DEBUG] Remapping with Dirty Mappings...
 [Architectury Transformer DEBUG] Remapping Classes:
 [Architectury Transformer DEBUG] net/fabricmc/api/EnvType -> net/minecraftforge/api/distmarker/Dist
@@ -144,4 +152,14 @@
 [Architectury Transformer DEBUG] Found class transformer
 [Architectury Transformer DEBUG] Writing com/irontom10/main with maxs=true frames=true
 [Architectury Transformer DEBUG] Remapping refmap from intermediary to srg: freespawn-forge-forge-refmap.json
-[Architectury Transformer DEBUG] Transformed com/irontom10/main in 212.1 ms
+[Architectury Transformer DEBUG] Transformed com/irontom10/main in 139.0 ms
+[Architectury Transformer DEBUG] Transforming from com/irontom10/ModItems.class to com/irontom10/ModItems.class with 8 transformer(s) on dev.architectury.transformer.handler.TinyRemapperPreparedTransformerHandler
+[Architectury Transformer DEBUG] Remapping with 1 mapping provider(s):
+[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.TransformForgeEnvironment$$Lambda/0x000072565c08d4b8@200a26bc
+[Architectury Transformer DEBUG] Remapping Classes:
+[Architectury Transformer DEBUG] net/fabricmc/api/EnvType -> net/minecraftforge/api/distmarker/Dist
+[Architectury Transformer DEBUG] net/fabricmc/api/Environment -> net/minecraftforge/api/distmarker/OnlyIn
+[Architectury Transformer DEBUG] Found class transformer
+[Architectury Transformer DEBUG] Writing com/irontom10/ModItems with maxs=true frames=true
+[Architectury Transformer DEBUG] Remapping refmap from intermediary to srg: freespawn-forge-forge-refmap.json
+[Architectury Transformer DEBUG] Transformed com/irontom10/ModItems in 62.38 ms

@@ -139,35 +139,35 @@
 [Architectury Transformer DEBUG]  - /home/irontom10/git/freespawn/.gradle/loom-cache/remapped_mods/loom_mappings_1_20_1_layered_hash_40359_v2_arch_quilt_arch_quilt/org/quiltmc/quilted-fabric-api/fabric-resource-loader-v0/7.7.0+0.92.2-1.20.1/fabric-resource-loader-v0-7.7.0+0.92.2-1.20.1.jar
 [Architectury Transformer DEBUG]  - /home/irontom10/git/freespawn/.gradle/loom-cache/remapped_mods/loom_mappings_1_20_1_layered_hash_40359_v2_arch_quilt_arch_quilt/org/quiltmc/quilted-fabric-api/fabric-sound-api-v1/7.7.0+0.92.2-1.20.1/fabric-sound-api-v1-7.7.0+0.92.2-1.20.1.jar
 [Architectury Transformer DEBUG]  - /home/irontom10/git/freespawn/.gradle/loom-cache/remapped_mods/loom_mappings_1_20_1_layered_hash_40359_v2_arch_quilt_arch_quilt/org/quiltmc/quilted-fabric-api/fabric-transitive-access-wideners-v1/7.7.0+0.92.2-1.20.1/fabric-transitive-access-wideners-v1-7.7.0+0.92.2-1.20.1.jar
-[Architectury Transformer] Read classpath in 1.814 s
+[Architectury Transformer] Read classpath in 2.943 s
 [Architectury Transformer DEBUG] Closed File Systems for /home/irontom10/git/freespawn/fabric-like/build/devlibs/freespawn-fabric-like-1.0.0-dev.jar
-[Architectury Transformer DEBUG] Transforming 5 transformer(s) from /home/irontom10/git/freespawn/fabric-like/build/devlibs/freespawn-fabric-like-1.0.0-dev.jar to /tmp/14650268945780068237.jar: 
-[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.RuntimeMixinRefmapDetector@4e718207
-[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.GenerateFakeQuiltMod@1d371b2d
-[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.TransformExpectPlatform@543c6f6d
-[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.RemapInjectables@13eb8acf
-[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.TransformPlatformOnly@51c8530f
-[Architectury Transformer DEBUG] Transforming from /home/irontom10/git/freespawn/fabric-like/build/devlibs/freespawn-fabric-like-1.0.0-dev.jar to /tmp/14650268945780068237.jar with 5 transformer(s) on dev.architectury.transformer.handler.SimpleTransformerHandler
+[Architectury Transformer DEBUG] Transforming 5 transformer(s) from /home/irontom10/git/freespawn/fabric-like/build/devlibs/freespawn-fabric-like-1.0.0-dev.jar to /tmp/220706490278636944.jar: 
+[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.RuntimeMixinRefmapDetector@7671cb68
+[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.GenerateFakeQuiltMod@49dc7102
+[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.TransformExpectPlatform@6b8ca3c8
+[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.RemapInjectables@68c72235
+[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.TransformPlatformOnly@10959ece
+[Architectury Transformer DEBUG] Transforming from /home/irontom10/git/freespawn/fabric-like/build/devlibs/freespawn-fabric-like-1.0.0-dev.jar to /tmp/220706490278636944.jar with 5 transformer(s) on dev.architectury.transformer.handler.SimpleTransformerHandler
 [Architectury Transformer DEBUG] Found class transformer
 [Architectury Transformer DEBUG] Writing com/irontom10/fabriclike/mainFabricLike with maxs=true frames=true
-[Architectury Transformer DEBUG] Closed File Systems for /tmp/14650268945780068237.jar
+[Architectury Transformer DEBUG] Closed File Systems for /tmp/220706490278636944.jar
 [Architectury Transformer] Listening at /home/irontom10/git/freespawn/fabric-like/build/devlibs/freespawn-fabric-like-1.0.0-dev.jar
 [Architectury Transformer DEBUG] Closed File Systems for /home/irontom10/git/freespawn/common/build/devlibs/freespawn-common-1.0.0-dev.jar
-[Architectury Transformer DEBUG] Transforming 5 transformer(s) from /home/irontom10/git/freespawn/common/build/devlibs/freespawn-common-1.0.0-dev.jar to /tmp/7041323680780881542.jar: 
-[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.RuntimeMixinRefmapDetector@35083305
-[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.GenerateFakeQuiltMod@8e0379d
-[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.TransformExpectPlatform@341b80b2
-[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.RemapInjectables@55a1c291
-[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.TransformPlatformOnly@2145433b
-[Architectury Transformer DEBUG] Transforming from /home/irontom10/git/freespawn/common/build/devlibs/freespawn-common-1.0.0-dev.jar to /tmp/7041323680780881542.jar with 5 transformer(s) on dev.architectury.transformer.handler.SimpleTransformerHandler
+[Architectury Transformer DEBUG] Transforming 5 transformer(s) from /home/irontom10/git/freespawn/common/build/devlibs/freespawn-common-1.0.0-dev.jar to /tmp/3438823254866253644.jar: 
+[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.RuntimeMixinRefmapDetector@4f1bfe23
+[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.GenerateFakeQuiltMod@e19bb76
+[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.TransformExpectPlatform@512535ff
+[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.RemapInjectables@71529963
+[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.TransformPlatformOnly@61a88b8c
+[Architectury Transformer DEBUG] Transforming from /home/irontom10/git/freespawn/common/build/devlibs/freespawn-common-1.0.0-dev.jar to /tmp/3438823254866253644.jar with 5 transformer(s) on dev.architectury.transformer.handler.SimpleTransformerHandler
 [Architectury Transformer DEBUG] Found class transformer
 [Architectury Transformer DEBUG] Writing com/irontom10/main with maxs=true frames=true
 [Architectury Transformer DEBUG] Checking whether /freespawn.mixins.json is a mixin config.
-[Architectury Transformer DEBUG] Closed File Systems for /tmp/7041323680780881542.jar
+[Architectury Transformer DEBUG] Closed File Systems for /tmp/3438823254866253644.jar
 [Architectury Transformer] Listening at /home/irontom10/git/freespawn/common/build/devlibs/freespawn-common-1.0.0-dev.jar
-[Architectury Transformer DEBUG] Temporary jar [/tmp/14650268945780068237.jar] contains packages: com.irontom10.fabriclike
+[Architectury Transformer DEBUG] Temporary jar [/tmp/220706490278636944.jar] contains packages: com.irontom10.fabriclike
 [Architectury Transformer DEBUG] Closed File Systems for /home/irontom10/git/freespawn/fabric-like/build/devlibs/freespawn-fabric-like-1.0.0-dev.jar
-[Architectury Transformer DEBUG] Temporary jar [/tmp/7041323680780881542.jar] contains packages: com.irontom10
+[Architectury Transformer DEBUG] Temporary jar [/tmp/3438823254866253644.jar] contains packages: com.irontom10
 [Architectury Transformer DEBUG] Closed File Systems for /home/irontom10/git/freespawn/common/build/devlibs/freespawn-common-1.0.0-dev.jar
 [Architectury Transformer DEBUG] Classpath entry [/home/irontom10/git/freespawn/quilt/build/classes/java/main] contains packages: com.irontom10.quilt
 [Architectury Transformer DEBUG] Classpath entry [/home/irontom10/git/freespawn/quilt/build/resources/main] contains packages: 

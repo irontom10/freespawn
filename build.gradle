@@ -24,6 +24,12 @@ subprojects {
     }
 
     repositories {
+        maven { url "https://libraries.minecraft.net/" }
+        maven { url "https://maven.fabricmc.net/" }
+        maven { url "https://maven.parchmentmc.org"}
+        maven { url "https://repo.spongepowered.org/maven/" }
+        maven { url "https://maven.architectury.dev/" }
+        maven { url "https://jitpack.io" }
         // Add repositories to retrieve artifacts from in here.
         // You should only use this when depending on other mods because
         // Loom adds the essential maven repositories to download Minecraft and libraries from automatically.
