@@ -1,17 +1,20 @@
-package com.irontom10.common.item;
+package com.irontom10;
 
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.sounds.SoundEvents;
-import net.minecraft.world.item.ArmorItem;
-import net.minecraft.world.item.ArmorMaterial;
-import net.minecraft.world.item.Items;
+import net.minecraft.world.effect.MobEffectInstance;
+import net.minecraft.world.effect.MobEffects;
+import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.item.*;
 import net.minecraft.world.item.crafting.Ingredient;
+import net.minecraft.world.level.Level;
 
 import java.util.function.Supplier;
 
 import static com.irontom10.main.MOD_ID;
 
 public enum ModArmorMaterials implements ArmorMaterial {
+    //ARMOR DEFINITIONS
     AMETHYST("amethyst", 100,   new int[]{ 4,  8,  7,  3},  40, SoundEvents.ARMOR_EQUIP_GENERIC, 0f, 0f, () -> Ingredient.of(ModItems.AMETHYST.get())),
     EMERALD("emerald",   60,   new int[]{ 3,  8,  6,  3},  40, SoundEvents.ARMOR_EQUIP_GENERIC, 0f, 0f, () -> Ingredient.of(Items.EMERALD)),
     EXPERIENCE("experience",70,new int[]{ 5,  9,  7,  4},  50, SoundEvents.ARMOR_EQUIP_GENERIC, 0f, 0f, () -> Ingredient.of(ModItems.EXPERIENCE.get())),

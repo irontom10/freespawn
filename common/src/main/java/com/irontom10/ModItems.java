@@ -1,4 +1,4 @@
-package com.irontom10.common.item;
+package com.irontom10;
 
 import dev.architectury.registry.registries.DeferredRegister;
 import dev.architectury.registry.registries.RegistrySupplier;
@@ -59,6 +59,80 @@ public class ModItems {
     public static final RegistrySupplier<Item> QUEEN_SCALE = ITEMS.register(
             "queen_scale",
             () -> new Item(new Item.Properties().arch$tab(CreativeModeTabs.INGREDIENTS))
+    );
+
+    //Armor items
+    public static final RegistrySupplier<Item> LAPIS_HELMET = ITEMS.register(
+            "lapis_helmet",
+            () -> new ArmorItem(
+                    ModArmorMaterials.LAPIS,
+                    ArmorItem.Type.HELMET,
+                    new Item.Properties() .arch$tab(CreativeModeTabs.COMBAT)
+
+            )
+    );
+    public static final RegistrySupplier<Item> LAPIS_CHESTPLATE = ITEMS.register(
+            "lapis_chestplate",
+            () -> new ArmorItem(
+                    ModArmorMaterials.LAPIS,
+                    ArmorItem.Type.CHESTPLATE,
+                    new Item.Properties() .arch$tab(CreativeModeTabs.COMBAT)
+
+            )
+    );
+    public static final RegistrySupplier<Item> LAPIS_LEGGINGS = ITEMS.register(
+            "lapis_leggings",
+            () -> new ArmorItem(
+                    ModArmorMaterials.LAPIS,
+                    ArmorItem.Type.LEGGINGS,
+                    new Item.Properties() .arch$tab(CreativeModeTabs.COMBAT)
+
+            )
+    );
+    public static final RegistrySupplier<Item> LAPIS_BOOTS = ITEMS.register(
+            "emerald_boots",
+            () -> new ArmorItem(
+                    ModArmorMaterials.LAPIS,
+                    ArmorItem.Type.BOOTS,
+                    new Item.Properties() .arch$tab(CreativeModeTabs.COMBAT)
+
+            )
+    );
+    public static final RegistrySupplier<Item> EMERALD_HELMET = ITEMS.register(
+            "emerald_helmet",
+            () -> new ArmorItem(
+                    ModArmorMaterials.EMERALD,
+                    ArmorItem.Type.HELMET,
+                    new Item.Properties() .arch$tab(CreativeModeTabs.COMBAT)
+
+            )
+    );
+    public static final RegistrySupplier<Item> EMERALD_CHESTPLATE = ITEMS.register(
+            "emerald_chestplate",
+            () -> new ArmorItem(
+                    ModArmorMaterials.EMERALD,
+                    ArmorItem.Type.CHESTPLATE,
+                    new Item.Properties() .arch$tab(CreativeModeTabs.COMBAT)
+
+            )
+    );
+    public static final RegistrySupplier<Item> EMERALD_LEGGINGS = ITEMS.register(
+            "lapis_leggings",
+            () -> new ArmorItem(
+                    ModArmorMaterials.EMERALD,
+                    ArmorItem.Type.LEGGINGS,
+                    new Item.Properties() .arch$tab(CreativeModeTabs.COMBAT)
+
+            )
+    );
+    public static final RegistrySupplier<Item> EMERALD_BOOTS = ITEMS.register(
+            "emerald_boots",
+            () -> new ArmorItem(
+                    ModArmorMaterials.EMERALD,
+                    ArmorItem.Type.BOOTS,
+                    new Item.Properties() .arch$tab(CreativeModeTabs.COMBAT)
+
+            )
     );
     public static final RegistrySupplier<Item> AMETHYST_HELMET = ITEMS.register(
             "amethyst_helmet",
@@ -280,7 +354,7 @@ public class ModItems {
       "tigerseye_helmet",
             () -> new ArmorItem(
                     ModArmorMaterials.TIGERSEYE,
-                    ArmorItem.Type.CHESTPLATE,
+                    ArmorItem.Type.HELMET,
                     new Item.Properties() .arch$tab(CreativeModeTabs.COMBAT)
             )
     );
