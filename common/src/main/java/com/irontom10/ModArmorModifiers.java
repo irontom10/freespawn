@@ -1,4 +1,5 @@
 package com.irontom10;
+
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.item.ArmorItem;
 import net.minecraft.world.item.ArmorMaterial;
@@ -13,16 +14,16 @@ import net.minecraft.world.item.ItemStack;
  * A collection of factory‐style helpers for making ArmorItems
  * with built‐in status‐effect behavior.
  */
-public class ModArmorConstructor {
-    private ModArmorConstructor() {} // no instantiation
+public class ModArmorModifiers {
+    private ModArmorModifiers() {} // no instantiation
 
     /**
      * Wraps an ArmorMaterial and EquipmentSlot in an ArmorItem
      * that grants Slow Falling I while worn.
      */
-    public static ArmorItem slowFall(ArmorMaterial material, EquipmentSlot slot, Item.Properties props) {
-        return new ArmorItem(material, slot, props) {
-            @Override
+    public static ArmorItem slowFall(ArmorMaterial material, ArmorItem.Type type, Item.Properties props) {
+        return new ArmorItem(material, type, props) {
+
             public void onArmorTick(ItemStack stack, Level world, Player player) {
                 if (!world.isClientSide) {
                     // re‐apply every tick so it never fades
@@ -43,9 +44,8 @@ public class ModArmorConstructor {
      * Wraps an ArmorMaterial and EquipmentSlot in an ArmorItem
      * that grants Movement Speed I while worn.
      */
-    public static ArmorItem speedBoost(ArmorMaterial material, EquipmentSlot slot, Item.Properties props) {
-        return new ArmorItem(material, slot, props) {
-            @Override
+    public static ArmorItem speedBoost(ArmorMaterial material, ArmorItem.Type type, Item.Properties props) {
+        return new ArmorItem(material, type, props) {
             public void onArmorTick(ItemStack stack, Level world, Player player) {
                 if (!world.isClientSide) {
                     player.addEffect(new MobEffectInstance(

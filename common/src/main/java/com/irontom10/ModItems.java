@@ -502,12 +502,12 @@ public class ModItems {
             )
     );
     public static final RegistrySupplier<Item> QUEEN_SCALE_BOOTS = ITEMS.register(
-            "queen_scale_boots",
-            () -> new ArmorItem(
-                    ModArmorMaterials.QUEEN,
-                    ArmorItem.Type.BOOTS,
-                    new Item.Properties().arch$tab(CreativeModeTabs.COMBAT)
-            )
+            "royal_guardian_boots",
+            () -> ModArmorBuilder.of(ModArmorMaterials.QUEEN)
+                    .type(ArmorItem.Type.BOOTS)
+                    .props(new Item.Properties() .arch$tab(CreativeModeTabs.COMBAT))
+                    .withSlowFall()
+                    .build()
     );
     public static final RegistrySupplier<Item> ROYAL_GUARDIAN_HELMET = ITEMS.register(
             "royal_guardian_helmet",
@@ -535,12 +535,12 @@ public class ModItems {
     );
     public static final RegistrySupplier<Item> ROYAL_GUARDIAN_BOOTS = ITEMS.register(
             "royal_guardian_boots",
-            () -> new ArmorItem(
-                    ModArmorMaterials.ROYAL,
-                    ArmorItem.Type.BOOTS,
-                    new Item.Properties().arch$tab(CreativeModeTabs.COMBAT)
-            )
-    );
+            () -> ModArmorBuilder.of(ModArmorMaterials.ROYAL)
+                    .type(ArmorItem.Type.BOOTS)
+                    .props(new Item.Properties() .arch$tab(CreativeModeTabs.COMBAT))
+                    .withSlowFall()
+                    .build()
+            );
 
 
 
