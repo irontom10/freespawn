@@ -1,5 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <module version="4">
+  <component name="AdditionalModuleElements">
+    <content url="file://$MODULE_DIR$/../../../fabric-like" dumb="true">
+      <excludeFolder url="file://$MODULE_DIR$/../../../fabric-like/run" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../fabric-like/run/logs/telemetry" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../fabric-like/run/mods" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../fabric-like/run/resourcepacks" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../fabric-like/run/resources" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../fabric-like/run/saves" />
+    </content>
+  </component>
   <component name="FacetManager">
     <facet type="minecraft" name="Minecraft">
       <configuration>
