@@ -1,10 +1,9 @@
 package com.irontom10;
 
 import dev.architectury.registry.registries.DeferredRegister;
-import dev.architectury.registry.registries.RegistrySupplier;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.world.item.*;
-import com.irontom10.ModItems;
+import com.irontom10.common.item.ModItems;
 
 public final class main {
     public static final String MOD_ID = "freespawn";
