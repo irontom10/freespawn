@@ -11,7 +11,7 @@ import java.util.function.Supplier;
 
 import static com.irontom10.main.MOD_ID;
 
-public enum ModMaterials implements ArmorMaterial {
+public enum ModArmorMaterials implements ArmorMaterial {
     AMETHYST("amethyst", 100,   new int[]{ 4,  8,  7,  3},  40, SoundEvents.ARMOR_EQUIP_GENERIC, 0f, 0f, () -> Ingredient.of(ModItems.AMETHYST.get())),
     EMERALD("emerald",   60,   new int[]{ 3,  8,  6,  3},  40, SoundEvents.ARMOR_EQUIP_GENERIC, 0f, 0f, () -> Ingredient.of(Items.EMERALD)),
     EXPERIENCE("experience",70,new int[]{ 5,  9,  7,  4},  50, SoundEvents.ARMOR_EQUIP_GENERIC, 0f, 0f, () -> Ingredient.of(ModItems.EXPERIENCE.get())),
@@ -39,7 +39,7 @@ public enum ModMaterials implements ArmorMaterial {
 
     private static final int[] BASE_DURABILITY = {11, 16, 16, 13};
 
-    ModMaterials(String name, int durabilityMulitplier, int[] protectionAmounts, int enchantmentValue, SoundEvent equipSound, float toughness, float knockbackResistance, Supplier<Ingredient> repairIngredient) {
+    ModArmorMaterials(String name, int durabilityMulitplier, int[] protectionAmounts, int enchantmentValue, SoundEvent equipSound, float toughness, float knockbackResistance, Supplier<Ingredient> repairIngredient) {
         this.name = name;
         this.durabilityMultiplier = durabilityMulitplier;
         this.protectionAmounts = protectionAmounts;

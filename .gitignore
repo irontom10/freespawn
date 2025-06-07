@@ -1,1 +1,11 @@
 /common/build/
+/fabric/build/
+/fabric-like/build/
+/forge/build/
+/quilt/build/
+/fabric/run/
+/forge/run/
+/quilt/run/
+/fabric-like/run/
+/common/run/
+/.gradle/
