@@ -1,6 +1,5 @@
-package com.irontom10;
+package com.irontom10.item;
 
-import com.irontom10.item.ModItems;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.world.item.*;

@@ -1,4 +1,4 @@
-package com.irontom10;
+package com.irontom10.item;
 
 import dev.architectury.registry.registries.DeferredRegister;
 import dev.architectury.registry.registries.RegistrySupplier;
@@ -11,21 +11,133 @@ public class ModItems {
 
     // 1) Create a DeferredRegister for Items
     public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(MOD_ID, Registries.ITEM);
+    //Food Items
+    public static final RegistrySupplier<Item> FIRE_FISH = ITEMS.register("fire_fish",
+            () -> new Item(new Item.Properties().food(ModFoods.FIRE_FISH).arch$tab(CreativeModeTabs.FOOD_AND_DRINKS)));
+
+    public static final RegistrySupplier<Item> SUN_FISH = ITEMS.register("sun_fish",
+            () -> new Item(new Item.Properties().food(ModFoods.SUN_FISH).arch$tab(CreativeModeTabs.FOOD_AND_DRINKS)));
+
+    public static final RegistrySupplier<Item> LAVAEEL = ITEMS.register("lavaeel",
+            () -> new Item(new Item.Properties().food(ModFoods.LAVAEEL).arch$tab(CreativeModeTabs.FOOD_AND_DRINKS)));
+
+    public static final RegistrySupplier<Item> SPARK_FISH = ITEMS.register("spark_fish",
+            () -> new Item(new Item.Properties().food(ModFoods.SPARK_FISH).arch$tab(CreativeModeTabs.FOOD_AND_DRINKS)));
+
+    public static final RegistrySupplier<Item> POPCORN = ITEMS.register("popcorn",
+            () -> new Item(new Item.Properties().food(ModFoods.POPCORN).arch$tab(CreativeModeTabs.FOOD_AND_DRINKS)));
+
+    public static final RegistrySupplier<Item> POPCORN_BUTTERED = ITEMS.register("popcorn_buttered",
+            () -> new Item(new Item.Properties().food(ModFoods.POPCORN_BUTTERED).arch$tab(CreativeModeTabs.FOOD_AND_DRINKS)));
+
+    public static final RegistrySupplier<Item> POPCORN_BUTTERED_SALTED = ITEMS.register("popcorn_buttered_salted",
+            () -> new Item(new Item.Properties().food(ModFoods.POPCORN_BUTTERED_SALTED).arch$tab(CreativeModeTabs.FOOD_AND_DRINKS)));
+
+    public static final RegistrySupplier<Item> BAG_OF_POPCORN = ITEMS.register("bag_of_popcorn",
+            () -> new Item(new Item.Properties().food(ModFoods.BAG_OF_POPCORN).arch$tab(CreativeModeTabs.FOOD_AND_DRINKS)));
+
+    public static final RegistrySupplier<Item> CORN_DOG = ITEMS.register("corn_dog",
+            () -> new Item(new Item.Properties().food(ModFoods.CORN_DOG).arch$tab(CreativeModeTabs.FOOD_AND_DRINKS)));
+
+    public static final RegistrySupplier<Item> CHEESE = ITEMS.register("cheese",
+            () -> new Item(new Item.Properties().food(ModFoods.CHEESE).arch$tab(CreativeModeTabs.FOOD_AND_DRINKS)));
+
+    public static final RegistrySupplier<Item> RAW_CORN_DOG = ITEMS.register("raw_corn_dog",
+            () -> new Item(new Item.Properties().food(ModFoods.RAW_CORN_DOG).arch$tab(CreativeModeTabs.FOOD_AND_DRINKS)));
+
+    public static final RegistrySupplier<Item> COOKED_PEACOCK = ITEMS.register("cooked_peacock",
+            () -> new Item(new Item.Properties().food(ModFoods.COOKED_PEACOCK).arch$tab(CreativeModeTabs.FOOD_AND_DRINKS)));
+
+    public static final RegistrySupplier<Item> RAW_PEACOCK = ITEMS.register("raw_peacock",
+            () -> new Item(new Item.Properties().food(ModFoods.RAW_PEACOCK).arch$tab(CreativeModeTabs.FOOD_AND_DRINKS)));
+
+    public static final RegistrySupplier<Item> RAW_BACON = ITEMS.register("raw_bacon",
+            () -> new Item(new Item.Properties().food(ModFoods.RAW_BACON).arch$tab(CreativeModeTabs.FOOD_AND_DRINKS)));
+
+    public static final RegistrySupplier<Item> BACON = ITEMS.register("bacon",
+            () -> new Item(new Item.Properties().food(ModFoods.BACON).arch$tab(CreativeModeTabs.FOOD_AND_DRINKS)));
+
+    public static final RegistrySupplier<Item> RAW_CRAB_MEAT = ITEMS.register("raw_crab_meat",
+            () -> new Item(new Item.Properties().food(ModFoods.RAW_CRAB_MEAT).arch$tab(CreativeModeTabs.FOOD_AND_DRINKS)));
+
+    public static final RegistrySupplier<Item> CRAB_MEAT = ITEMS.register("crab_meat",
+            () -> new Item(new Item.Properties().food(ModFoods.CRAB_MEAT).arch$tab(CreativeModeTabs.FOOD_AND_DRINKS)));
+
+    public static final RegistrySupplier<Item> BUTTER_CANDY = ITEMS.register("butter_candy",
+            () -> new Item(new Item.Properties().food(ModFoods.BUTTER_CANDY).arch$tab(CreativeModeTabs.FOOD_AND_DRINKS)));
+
+    public static final RegistrySupplier<Item> GREEN_FISH = ITEMS.register("green_fish",
+            () -> new Item(new Item.Properties().food(ModFoods.GREEN_FISH).arch$tab(CreativeModeTabs.FOOD_AND_DRINKS)));
+
+    public static final RegistrySupplier<Item> BLUE_FISH = ITEMS.register("blue_fish",
+            () -> new Item(new Item.Properties().food(ModFoods.BLUE_FISH).arch$tab(CreativeModeTabs.FOOD_AND_DRINKS)));
+
+    public static final RegistrySupplier<Item> PINK_FISH = ITEMS.register("pink_fish",
+            () -> new Item(new Item.Properties().food(ModFoods.PINK_FISH).arch$tab(CreativeModeTabs.FOOD_AND_DRINKS)));
+
+    public static final RegistrySupplier<Item> JEW_FISH = ITEMS.register("jew_fish",
+            () -> new Item(new Item.Properties().food(ModFoods.JEW_FISH).arch$tab(CreativeModeTabs.FOOD_AND_DRINKS)));
+
+    public static final RegistrySupplier<Item> ROCK_FISH = ITEMS.register("rock_fish",
+            () -> new Item(new Item.Properties().food(ModFoods.ROCK_FISH).arch$tab(CreativeModeTabs.FOOD_AND_DRINKS)));
+
+    public static final RegistrySupplier<Item> WOOD_FISH = ITEMS.register("wood_fish",
+            () -> new Item(new Item.Properties().food(ModFoods.WOOD_FISH).arch$tab(CreativeModeTabs.FOOD_AND_DRINKS)));
+
+    public static final RegistrySupplier<Item> GRAY_FISH = ITEMS.register("gray_fish",
+            () -> new Item(new Item.Properties().food(ModFoods.GRAY_FISH).arch$tab(CreativeModeTabs.FOOD_AND_DRINKS)));
+
+    public static final RegistrySupplier<Item> GARDEN_SALAD = ITEMS.register("garden_salad",
+            () -> new Item(new Item.Properties().food(ModFoods.GARDEN_SALAD).arch$tab(CreativeModeTabs.FOOD_AND_DRINKS)));
+
+    public static final RegistrySupplier<Item> BLT_SANDWITCH = ITEMS.register("blt_sandwitch",
+            () -> new Item(new Item.Properties().food(ModFoods.BLT_SANDWITCH).arch$tab(CreativeModeTabs.FOOD_AND_DRINKS)));
+
+    public static final RegistrySupplier<Item> A_CARBBY_PATTY = ITEMS.register("a_carbby_patty",
+            () -> new Item(new Item.Properties().food(ModFoods.A_CARBBY_PATTY).arch$tab(CreativeModeTabs.FOOD_AND_DRINKS)));
+
+    public static final RegistrySupplier<Item> STRAWBERRY = ITEMS.register("strawberry",
+            () -> new Item(new Item.Properties().food(ModFoods.STRAWBERRY).arch$tab(CreativeModeTabs.FOOD_AND_DRINKS)));
+
+    public static final RegistrySupplier<Item> CRYSTAL_APPLE = ITEMS.register("crystal_apple",
+            () -> new Item(new Item.Properties().food(ModFoods.CRYSTAL_APPLE).arch$tab(CreativeModeTabs.FOOD_AND_DRINKS)));
+
+    public static final RegistrySupplier<Item> LOVE = ITEMS.register("love",
+            () -> new Item(new Item.Properties().food(ModFoods.LOVE).arch$tab(CreativeModeTabs.FOOD_AND_DRINKS)));
+
+    public static final RegistrySupplier<Item> CHERRIES = ITEMS.register("cherries",
+            () -> new Item(new Item.Properties().food(ModFoods.CHERRIES).arch$tab(CreativeModeTabs.FOOD_AND_DRINKS)));
+
+    public static final RegistrySupplier<Item> PEACH = ITEMS.register("peach",
+            () -> new Item(new Item.Properties().food(ModFoods.PEACH).arch$tab(CreativeModeTabs.FOOD_AND_DRINKS)));
+
+    public static final RegistrySupplier<Item> RADDISH = ITEMS.register("raddish",
+            () -> new Item(new Item.Properties().food(ModFoods.RADDISH).arch$tab(CreativeModeTabs.FOOD_AND_DRINKS)));
+
+    public static final RegistrySupplier<Item> RICE = ITEMS.register("rice",
+            () -> new Item(new Item.Properties().food(ModFoods.RICE).arch$tab(CreativeModeTabs.FOOD_AND_DRINKS)));
+
+    public static final RegistrySupplier<Item> CORN = ITEMS.register("corn",
+            () -> new Item(new Item.Properties().food(ModFoods.CORN).arch$tab(CreativeModeTabs.FOOD_AND_DRINKS)));
+
+    public static final RegistrySupplier<Item> QUINOA = ITEMS.register("quinoa",
+            () -> new Item(new Item.Properties().food(ModFoods.QUINOA).arch$tab(CreativeModeTabs.FOOD_AND_DRINKS)));
+
+    public static final RegistrySupplier<Item> TOMATO = ITEMS.register("tomato",
+            () -> new Item(new Item.Properties().food(ModFoods.TOMATO).arch$tab(CreativeModeTabs.FOOD_AND_DRINKS)));
+
+    public static final RegistrySupplier<Item> LETTUCE = ITEMS.register("lettuce",
+            () -> new Item(new Item.Properties().food(ModFoods.LETTUCE).arch$tab(CreativeModeTabs.FOOD_AND_DRINKS)));
+
+
+
     // Ingredient items
     public static final RegistrySupplier<Item> AMETHYST = ITEMS.register(
             "amethyst",
             () -> new Item(new Item.Properties().arch$tab(CreativeModeTabs.INGREDIENTS))
     );
-    public static final RegistrySupplier<Item> EXPERIENCE = ITEMS.register(
-            "experience",
-            () -> new Item(new Item.Properties().arch$tab(CreativeModeTabs.INGREDIENTS))
-    );
     public static final RegistrySupplier<Item> MOTHSCALE = ITEMS.register(
             "mothscale",
-            () -> new Item(new Item.Properties().arch$tab(CreativeModeTabs.INGREDIENTS))
-    );
-    public static final RegistrySupplier<Item> LAVAEEL = ITEMS.register(
-            "lavaeel",
             () -> new Item(new Item.Properties().arch$tab(CreativeModeTabs.INGREDIENTS))
     );
     public static final RegistrySupplier<Item> ULTIMATE = ITEMS.register(
@@ -50,10 +162,6 @@ public class ModItems {
     );
     public static final RegistrySupplier<Item> RUBY = ITEMS.register(
             "ruby",
-            () -> new Item(new Item.Properties().arch$tab(CreativeModeTabs.INGREDIENTS))
-    );
-    public static final RegistrySupplier<Item> KING_SCALE = ITEMS.register(
-            "king_scale",
             () -> new Item(new Item.Properties().arch$tab(CreativeModeTabs.INGREDIENTS))
     );
     public static final RegistrySupplier<Item> QUEEN_SCALE = ITEMS.register(
@@ -90,7 +198,7 @@ public class ModItems {
             )
     );
     public static final RegistrySupplier<Item> LAPIS_BOOTS = ITEMS.register(
-            "emerald_boots",
+            "lapis_boots",
             () -> new ArmorItem(
                     ModArmorMaterials.LAPIS,
                     ArmorItem.Type.BOOTS,
@@ -418,7 +526,7 @@ public class ModItems {
         "mobzilla_scale_helmet",
             () -> new ArmorItem(
                     ModArmorMaterials.MOBZILLA,
-                    ArmorItem.Type.CHESTPLATE,
+                    ArmorItem.Type.HELMET,
                     new Item.Properties() .arch$tab(CreativeModeTabs.COMBAT)
             )
     );
@@ -502,7 +610,7 @@ public class ModItems {
             )
     );
     public static final RegistrySupplier<Item> QUEEN_SCALE_BOOTS = ITEMS.register(
-            "royal_guardian_boots",
+            "queen_scale_boots",
             () -> ModArmorBuilder.of(ModArmorMaterials.QUEEN)
                     .type(ArmorItem.Type.BOOTS)
                     .props(new Item.Properties() .arch$tab(CreativeModeTabs.COMBAT))
