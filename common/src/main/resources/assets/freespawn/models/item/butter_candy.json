@@ -1,6 +1,7 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "freespawn:item/buttercandy"
+    "layer0": "freespawn:item/butter_candy"
+
   }
 }

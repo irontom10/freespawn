@@ -1,4 +1,4 @@
-package com.irontom10;
+package com.irontom10.item;
 
 import dev.architectury.registry.registries.DeferredRegister;
 import dev.architectury.registry.registries.RegistrySupplier;
@@ -11,6 +11,30 @@ public class ModItems {
 
     // 1) Create a DeferredRegister for Items
     public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(MOD_ID, Registries.ITEM);
+    //Food Items
+    public static final RegistrySupplier<Item> BUTTER_CANDY = ITEMS.register("butter_candy",
+            () -> new Item(new Item.Properties().food(ModFoods.BUTTER_CANDY).arch$tab(CreativeModeTabs.FOOD_AND_DRINKS)));
+    public static final RegistrySupplier<Item> GREEN_FISH = ITEMS.register();
+    public static final RegistrySupplier<Item> GREEN_FISH = ITEMS.register();
+    public static final RegistrySupplier<Item> GREEN_FISH = ITEMS.register();
+    public static final RegistrySupplier<Item> GREEN_FISH = ITEMS.register();
+    public static final RegistrySupplier<Item> GREEN_FISH = ITEMS.register();
+    public static final RegistrySupplier<Item> GREEN_FISH = ITEMS.register();
+    public static final RegistrySupplier<Item> GREEN_FISH = ITEMS.register();
+    public static final RegistrySupplier<Item> GREEN_FISH = ITEMS.register();
+    public static final RegistrySupplier<Item> GREEN_FISH = ITEMS.register();
+    public static final RegistrySupplier<Item> GREEN_FISH = ITEMS.register();
+    public static final RegistrySupplier<Item> GREEN_FISH = ITEMS.register();
+    public static final RegistrySupplier<Item> GREEN_FISH = ITEMS.register();
+    public static final RegistrySupplier<Item> GREEN_FISH = ITEMS.register();
+    public static final RegistrySupplier<Item> GREEN_FISH = ITEMS.register();
+    public static final RegistrySupplier<Item> GREEN_FISH = ITEMS.register();
+    public static final RegistrySupplier<Item> GREEN_FISH = ITEMS.register();
+    public static final RegistrySupplier<Item> GREEN_FISH = ITEMS.register();
+    public static final RegistrySupplier<Item> GREEN_FISH = ITEMS.register();
+    public static final RegistrySupplier<Item> GREEN_FISH = ITEMS.register();
+    public static final RegistrySupplier<Item> GREEN_FISH = ITEMS.register();
+
     // Ingredient items
     public static final RegistrySupplier<Item> AMETHYST = ITEMS.register(
             "amethyst",
@@ -90,7 +114,7 @@ public class ModItems {
             )
     );
     public static final RegistrySupplier<Item> LAPIS_BOOTS = ITEMS.register(
-            "emerald_boots",
+            "lapis_boots",
             () -> new ArmorItem(
                     ModArmorMaterials.LAPIS,
                     ArmorItem.Type.BOOTS,
@@ -418,7 +442,7 @@ public class ModItems {
         "mobzilla_scale_helmet",
             () -> new ArmorItem(
                     ModArmorMaterials.MOBZILLA,
-                    ArmorItem.Type.CHESTPLATE,
+                    ArmorItem.Type.HELMET,
                     new Item.Properties() .arch$tab(CreativeModeTabs.COMBAT)
             )
     );
@@ -502,7 +526,7 @@ public class ModItems {
             )
     );
     public static final RegistrySupplier<Item> QUEEN_SCALE_BOOTS = ITEMS.register(
-            "royal_guardian_boots",
+            "queen_scale_boots",
             () -> ModArmorBuilder.of(ModArmorMaterials.QUEEN)
                     .type(ArmorItem.Type.BOOTS)
                     .props(new Item.Properties() .arch$tab(CreativeModeTabs.COMBAT))

@@ -1,5 +1,6 @@
 package com.irontom10;
 
+import com.irontom10.item.ModItems;
 import dev.architectury.registry.registries.DeferredRegister;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.world.item.*;
