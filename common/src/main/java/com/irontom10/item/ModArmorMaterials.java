@@ -1,5 +1,6 @@
 package com.irontom10.item;
 
+import com.irontom10.item.ModItems;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.world.item.*;
@@ -13,16 +14,16 @@ public enum ModArmorMaterials implements ArmorMaterial {
     //ARMOR DEFINITIONS
     AMETHYST("amethyst", 100,   new int[]{ 4,  8,  7,  3},  40, SoundEvents.ARMOR_EQUIP_GENERIC, 0f, 0f, () -> Ingredient.of(ModItems.AMETHYST.get())),
     EMERALD("emerald",   60,   new int[]{ 3,  8,  6,  3},  40, SoundEvents.ARMOR_EQUIP_GENERIC, 0f, 0f, () -> Ingredient.of(Items.EMERALD)),
-    EXPERIENCE("experience",70,new int[]{ 5,  9,  7,  4},  50, SoundEvents.ARMOR_EQUIP_GENERIC, 0f, 0f, () -> Ingredient.of(ModItems.EXPERIENCE.get())),
+    EXPERIENCE("experience",70,new int[]{ 5,  9,  7,  4},  50, SoundEvents.ARMOR_EQUIP_GENERIC, 0f, 0f, () -> Ingredient.of(Items.EMERALD)),
     MOTHSCALE("mothscale",  50,new int[]{ 2,  7,  5,  2},  50, SoundEvents.ARMOR_EQUIP_GENERIC, 0f, 0f, () -> Ingredient.of(ModItems.MOTHSCALE.get())),
     LAVAEEL("lavaeel",     40, new int[]{ 2,  7,  5,  2},  35, SoundEvents.ARMOR_EQUIP_GENERIC, 0f, 0f, () -> Ingredient.of(ModItems.LAVAEEL.get())),
-    ULTIMATE("ultimate",   200, new int[]{ 6, 12, 10,  6}, 100, SoundEvents.ARMOR_EQUIP_GENERIC, 0f, 0f, () -> Ingredient.of(ModItems.ULTIMATE.get())),
+    ULTIMATE("ultimate",   200, new int[]{ 6, 12, 10,  6}, 100, SoundEvents.ARMOR_EQUIP_GENERIC, 0f, 0f, () -> Ingredient.EMPTY),
     PINK_TOURMAILINE("pink_tourmailine",           50,  new int[]{ 3,  7,  5,  2},  40, SoundEvents.ARMOR_EQUIP_GENERIC, 0f, 0f, () -> Ingredient.of(ModItems.PINK_TOURMAILINE_INGOT.get())),
-    TIGERSEYE("tigerseye",  80, new int[]{ 4,  8,  7,  4},  55, SoundEvents.ARMOR_EQUIP_GENERIC, 0f, 0f, () -> Ingredient.of(ModItems.TIGERSEYE.get())),
+    TIGERSEYE("tigerseye",  80, new int[]{ 4,  8,  7,  4},  55, SoundEvents.ARMOR_EQUIP_GENERIC, 0f, 0f, () -> Ingredient.of(ModItems.TIGERSEYE_INGOT.get())),
     PEACOCK("peacock",     40,  new int[]{ 2,  5,  4,  2},  30, SoundEvents.ARMOR_EQUIP_GENERIC, 0f, 0f, () -> Ingredient.of(ModItems.PEACOCK_FEATHER.get())),
     MOBZILLA("mobzilla",  1000, new int[]{ 7, 13, 11,  7}, 150, SoundEvents.ARMOR_EQUIP_GENERIC, 0f, 0f, () -> Ingredient.of(ModItems.MOBZILLA_SCALE.get())),
     RUBY("ruby",           90,  new int[]{ 4,  9,  8,  4},  40, SoundEvents.ARMOR_EQUIP_GENERIC, 0f, 0f, () -> Ingredient.of(ModItems.RUBY.get())),
-    ROYAL("royal",        2000, new int[]{ 8, 14, 12,  8}, 200, SoundEvents.ARMOR_EQUIP_GENERIC, 0f, 0f, () -> Ingredient.of(ModItems.KING_SCALE.get())),
+    ROYAL("royal",        2000, new int[]{ 8, 14, 12,  8}, 200, SoundEvents.ARMOR_EQUIP_GENERIC, 0f, 0f, () -> Ingredient.EMPTY),
     LAPIS("lapis",         60,  new int[]{ 2,  7,  5,  2},  60, SoundEvents.ARMOR_EQUIP_GENERIC, 0f, 0f, () -> Ingredient.of(Items.LAPIS_BLOCK)),
     QUEEN("queen",       1500,  new int[]{ 9, 16, 14,  9}, 150, SoundEvents.ARMOR_EQUIP_TURTLE, 1f,10f,() -> Ingredient.of(ModItems.QUEEN_SCALE.get()));
 

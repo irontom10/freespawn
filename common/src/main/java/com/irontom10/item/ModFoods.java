@@ -34,7 +34,7 @@ public class ModFoods {
     public  static final FoodProperties BAG_OF_POPCORN = new FoodProperties.Builder()
             .nutrition(10)
             .build();
-    public  static final FoodProperties CORN_DOG = new FoodProperties.Builder()
+    public  static final FoodProperties COOKED_CORN_DOG = new FoodProperties.Builder()
             .nutrition(16)
             .build();
     public  static final FoodProperties CHEESE = new FoodProperties.Builder()
@@ -55,7 +55,7 @@ public class ModFoods {
             .effect(new MobEffectInstance(MobEffects.HUNGER, 600, 0), 0.3F)
             .nutrition(8)
             .build();
-    public  static final FoodProperties BACON = new FoodProperties.Builder()
+    public  static final FoodProperties COOKED_BACON = new FoodProperties.Builder()
             .effect(new MobEffectInstance(MobEffects.DAMAGE_BOOST, 2000, 0), 1F)
             .effect(new MobEffectInstance(MobEffects.REGENERATION, 2000, 0), 0.3F)
             .nutrition(14)
@@ -63,7 +63,7 @@ public class ModFoods {
     public  static final FoodProperties RAW_CRAB_MEAT = new FoodProperties.Builder()
             .nutrition(4)
             .build();
-    public  static final FoodProperties CRAB_MEAT = new FoodProperties.Builder()
+    public  static final FoodProperties COOKED_CRAB_MEAT = new FoodProperties.Builder()
             .nutrition(6)
             .build();
     public static final FoodProperties BUTTER_CANDY = new FoodProperties.Builder()
@@ -101,7 +101,7 @@ public class ModFoods {
     public static final FoodProperties BLT_SANDWITCH = new FoodProperties.Builder()
             .nutrition(12)
             .saturationMod(0.3F).build();
-    public static final FoodProperties A_CARBBY_PATTY = new FoodProperties.Builder()
+    public static final FoodProperties A_CRABBY_PATTY = new FoodProperties.Builder()
             .nutrition(16)
             .saturationMod(0.3F).build();
     public static final FoodProperties STRAWBERRY = new FoodProperties.Builder()
@@ -127,7 +127,7 @@ public class ModFoods {
     public static final FoodProperties PEACH = new FoodProperties.Builder()
             .nutrition(4)
             .saturationMod(0.3F).build();
-    public static final FoodProperties RADDISH = new FoodProperties.Builder()
+    public static final FoodProperties RADISH = new FoodProperties.Builder()
             .nutrition(2)
             .saturationMod(0.3F).build();
     public static final FoodProperties RICE = new FoodProperties.Builder()

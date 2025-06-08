@@ -36,8 +36,8 @@ public class ModItems {
     public static final RegistrySupplier<Item> BAG_OF_POPCORN = ITEMS.register("bag_of_popcorn",
             () -> new Item(new Item.Properties().food(ModFoods.BAG_OF_POPCORN).arch$tab(CreativeModeTabs.FOOD_AND_DRINKS)));
 
-    public static final RegistrySupplier<Item> CORN_DOG = ITEMS.register("corn_dog",
-            () -> new Item(new Item.Properties().food(ModFoods.CORN_DOG).arch$tab(CreativeModeTabs.FOOD_AND_DRINKS)));
+    public static final RegistrySupplier<Item> COOKED_CORN_DOG = ITEMS.register("cooked_corn_dog",
+            () -> new Item(new Item.Properties().food(ModFoods.COOKED_CORN_DOG).arch$tab(CreativeModeTabs.FOOD_AND_DRINKS)));
 
     public static final RegistrySupplier<Item> CHEESE = ITEMS.register("cheese",
             () -> new Item(new Item.Properties().food(ModFoods.CHEESE).arch$tab(CreativeModeTabs.FOOD_AND_DRINKS)));
@@ -55,13 +55,13 @@ public class ModItems {
             () -> new Item(new Item.Properties().food(ModFoods.RAW_BACON).arch$tab(CreativeModeTabs.FOOD_AND_DRINKS)));
 
     public static final RegistrySupplier<Item> BACON = ITEMS.register("bacon",
-            () -> new Item(new Item.Properties().food(ModFoods.BACON).arch$tab(CreativeModeTabs.FOOD_AND_DRINKS)));
+            () -> new Item(new Item.Properties().food(ModFoods.COOKED_BACON).arch$tab(CreativeModeTabs.FOOD_AND_DRINKS)));
 
     public static final RegistrySupplier<Item> RAW_CRAB_MEAT = ITEMS.register("raw_crab_meat",
             () -> new Item(new Item.Properties().food(ModFoods.RAW_CRAB_MEAT).arch$tab(CreativeModeTabs.FOOD_AND_DRINKS)));
 
-    public static final RegistrySupplier<Item> CRAB_MEAT = ITEMS.register("crab_meat",
-            () -> new Item(new Item.Properties().food(ModFoods.CRAB_MEAT).arch$tab(CreativeModeTabs.FOOD_AND_DRINKS)));
+    public static final RegistrySupplier<Item> COOKED_CRAB_MEAT = ITEMS.register("cooked_crab_meat",
+            () -> new Item(new Item.Properties().food(ModFoods.COOKED_CRAB_MEAT).arch$tab(CreativeModeTabs.FOOD_AND_DRINKS)));
 
     public static final RegistrySupplier<Item> BUTTER_CANDY = ITEMS.register("butter_candy",
             () -> new Item(new Item.Properties().food(ModFoods.BUTTER_CANDY).arch$tab(CreativeModeTabs.FOOD_AND_DRINKS)));
@@ -90,11 +90,11 @@ public class ModItems {
     public static final RegistrySupplier<Item> GARDEN_SALAD = ITEMS.register("garden_salad",
             () -> new Item(new Item.Properties().food(ModFoods.GARDEN_SALAD).arch$tab(CreativeModeTabs.FOOD_AND_DRINKS)));
 
-    public static final RegistrySupplier<Item> BLT_SANDWITCH = ITEMS.register("blt_sandwitch",
+    public static final RegistrySupplier<Item> BLT_SANDWITCH = ITEMS.register("blt_sandwich",
             () -> new Item(new Item.Properties().food(ModFoods.BLT_SANDWITCH).arch$tab(CreativeModeTabs.FOOD_AND_DRINKS)));
 
-    public static final RegistrySupplier<Item> A_CARBBY_PATTY = ITEMS.register("a_carbby_patty",
-            () -> new Item(new Item.Properties().food(ModFoods.A_CARBBY_PATTY).arch$tab(CreativeModeTabs.FOOD_AND_DRINKS)));
+    public static final RegistrySupplier<Item> A_CRABBY_PATTY = ITEMS.register("a_crabby_patty",
+            () -> new Item(new Item.Properties().food(ModFoods.A_CRABBY_PATTY).arch$tab(CreativeModeTabs.FOOD_AND_DRINKS)));
 
     public static final RegistrySupplier<Item> STRAWBERRY = ITEMS.register("strawberry",
             () -> new Item(new Item.Properties().food(ModFoods.STRAWBERRY).arch$tab(CreativeModeTabs.FOOD_AND_DRINKS)));
@@ -111,8 +111,8 @@ public class ModItems {
     public static final RegistrySupplier<Item> PEACH = ITEMS.register("peach",
             () -> new Item(new Item.Properties().food(ModFoods.PEACH).arch$tab(CreativeModeTabs.FOOD_AND_DRINKS)));
 
-    public static final RegistrySupplier<Item> RADDISH = ITEMS.register("raddish",
-            () -> new Item(new Item.Properties().food(ModFoods.RADDISH).arch$tab(CreativeModeTabs.FOOD_AND_DRINKS)));
+    public static final RegistrySupplier<Item> RADISH = ITEMS.register("radish",
+            () -> new Item(new Item.Properties().food(ModFoods.RADISH).arch$tab(CreativeModeTabs.FOOD_AND_DRINKS)));
 
     public static final RegistrySupplier<Item> RICE = ITEMS.register("rice",
             () -> new Item(new Item.Properties().food(ModFoods.RICE).arch$tab(CreativeModeTabs.FOOD_AND_DRINKS)));
@@ -140,16 +140,12 @@ public class ModItems {
             "mothscale",
             () -> new Item(new Item.Properties().arch$tab(CreativeModeTabs.INGREDIENTS))
     );
-    public static final RegistrySupplier<Item> ULTIMATE = ITEMS.register(
-            "ultimate",
-            () -> new Item(new Item.Properties().arch$tab(CreativeModeTabs.INGREDIENTS))
-    );
     public static final RegistrySupplier<Item> PINK_TOURMAILINE_INGOT = ITEMS.register(
             "pink_tourmailine_ingot",
             () -> new Item(new Item.Properties().arch$tab(CreativeModeTabs.INGREDIENTS))
     );
-    public static final RegistrySupplier<Item> TIGERSEYE = ITEMS.register(
-            "tigerseye",
+    public static final RegistrySupplier<Item> TIGERSEYE_INGOT = ITEMS.register(
+            "tigerseye_ingot",
             () -> new Item(new Item.Properties().arch$tab(CreativeModeTabs.INGREDIENTS))
     );
     public static final RegistrySupplier<Item> PEACOCK_FEATHER = ITEMS.register(
@@ -169,6 +165,68 @@ public class ModItems {
             () -> new Item(new Item.Properties().arch$tab(CreativeModeTabs.INGREDIENTS))
     );
 
+    //Weapons
+
+    public static final RegistrySupplier<Item> ULTIMATE_SWORD = ITEMS.register("ultimate_sword",
+            () -> new SwordItem(Tiers.NETHERITE, 35, -2F,
+                    new Item.Properties().arch$tab(CreativeModeTabs.COMBAT)));
+    /*
+    public static final RegistrySupplier<Item> NIGHTMARE_SWORD = ITEMS.register("nightmare_sword",
+            () -> new SwordItem(nightmare_stats, 12, -2.4F,
+                    new Item.Properties().arch$tab(CreativeModeTabs.COMBAT)));
+
+    public static final RegistrySupplier<Item> BERTHA_SWORD = ITEMS.register("bertha_sword",
+            () -> new SwordItem(bertha_stats, 15, -2.4F,
+                    new Item.Properties().arch$tab(CreativeModeTabs.COMBAT)));
+
+    public static final RegistrySupplier<Item> CRYSTAL_WOOD_SWORD = ITEMS.register("crystal_wood_sword",
+            () -> new SwordItem(crystalwood_stats, 3, -2.4F,
+                    new Item.Properties().arch$tab(CreativeModeTabs.COMBAT)));
+
+    public static final RegistrySupplier<Item> CRYSTAL_STONE_SWORD = ITEMS.register("crystal_stone_sword",
+            () -> new SwordItem(crystalstone_stats, 6, -2.4F,
+                    new Item.Properties().arch$tab(CreativeModeTabs.COMBAT)));
+
+    public static final RegistrySupplier<Item> PINK_SWORD = ITEMS.register("PINK_TOURMAILINE_sword",
+            () -> new SwordItem(crystalpink_stats, 10, -2.4F,
+                    new Item.Properties().arch$tab(CreativeModeTabs.COMBAT)));
+
+    public static final RegistrySupplier<Item> TIGERS_EYE_SWORD = ITEMS.register("tigers_eye_sword",
+            () -> new SwordItem(tigerseye_stats, 12, -2.4F,
+                    new Item.Properties().arch$tab(CreativeModeTabs.COMBAT)));
+
+    public static final RegistrySupplier<Item> RUBY_SWORD = ITEMS.register("ruby_sword",
+            () -> new SwordItem(ruby_stats, 11, -2.4F,
+                    new Item.Properties().arch$tab(CreativeModeTabs.COMBAT)));
+
+    public static final RegistrySupplier<Item> AMETHYST_SWORD = ITEMS.register("amethyst_sword",
+            () -> new SwordItem(amethyst_stats, 11, -2.4F,
+                    new Item.Properties().arch$tab(CreativeModeTabs.COMBAT)));
+
+    public static final RegistrySupplier<Item> EMERALD_SWORD = ITEMS.register("emerald_sword",
+            () -> new SwordItem(emerald_stats, 10, -2.4F,
+                    new Item.Properties().arch$tab(CreativeModeTabs.COMBAT)));
+
+    public static final RegistrySupplier<Item> ROYAL_SWORD = ITEMS.register("royal_sword",
+            () -> new SwordItem(royal_stats, 15, -2.4F,
+                    new Item.Properties().arch$tab(CreativeModeTabs.COMBAT)));
+
+    public static final RegistrySupplier<Item> ATTITUDE_SWORD = ITEMS.register("attitude_sword",
+            () -> new SwordItem(hammy_stats, 15, -2.4F,
+                    new Item.Properties().arch$tab(CreativeModeTabs.COMBAT)));
+
+    public static final RegistrySupplier<Item> BATTLE_AXE_SWORD = ITEMS.register("battle_axe_sword",
+            () -> new SwordItem(battleaxe_stats, 15, -2.4F,
+                    new Item.Properties().arch$tab(CreativeModeTabs.COMBAT)));
+
+    public static final RegistrySupplier<Item> CHAINSAW_SWORD = ITEMS.register("chainsaw_sword",
+            () -> new SwordItem(chainsaw_stats, 10, -2.4F,
+                    new Item.Properties().arch$tab(CreativeModeTabs.COMBAT)));
+
+    public static final RegistrySupplier<Item> QUEEN_BATTLE_AXE_SWORD = ITEMS.register("queen_battle_axe_sword",
+            () -> new SwordItem(queenbattleaxe_stats, 15, -2.4F,
+                    new Item.Properties().arch$tab(CreativeModeTabs.COMBAT)));
+    */
     //Armor items
     public static final RegistrySupplier<Item> LAPIS_HELMET = ITEMS.register(
             "lapis_helmet",

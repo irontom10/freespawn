@@ -1,42 +1,22 @@
-package danger.orespawn;
 
-import net.minecraft.client.model.ModelBase;
-import net.minecraft.client.model.ModelRenderer;
-import net.minecraft.entity.Entity;
-import net.minecraft.util.MathHelper;
+    ultimate_stats = get_weaponstats(config, weapons, "Ultimate", 10, 3000, 15, 36, 100);
+    nightmare_stats = get_weaponstats(config, weapons, "Nightmare", 3, 1800, 12, 26, 60);
+    bertha_stats = get_weaponstats(config, weapons, "Bertha", 3, 9000, 15, 496, 100);
+    crystalwood_stats = get_weaponstats(config, weapons, "CrystalWood", 2, 300, 3, 2, 15);
+    crystalstone_stats = get_weaponstats(config, weapons, "CrystalStone", 3, 800, 6, 5, 45);
+    crystalpink_stats = get_weaponstats(config, weapons, "Pink", 4, 1100, 10, 7, 65);
+    tigerseye_stats = get_weaponstats(config, weapons, "TigersEye", 4, 1600, 12, 8, 75);
+    ruby_stats = get_weaponstats(config, weapons, "Ruby", 5, 1500, 11, 16, 85);
+    amethyst_stats = get_weaponstats(config, weapons, "Amethyst", 4, 2000, 11, 11, 70);
+    emerald_stats = get_weaponstats(config, weapons, "Emerald", 3, 1300, 10, 6, 75);
+    royal_stats = get_weaponstats(config, weapons, "Royal", 3, 10000, 15, 746, 150);
+    hammy_stats = get_weaponstats(config, weapons, "Attitude", 5, 2000, 15, 82, 100);
+    battleaxe_stats = get_weaponstats(config, weapons, "BattleAxe", 3, 1500, 15, 46, 75);
+    chainsaw_stats = get_weaponstats(config, weapons, "Chainsaw", 3, 1500, 10, 56, 75);
+    queenbattleaxe_stats = get_weaponstats(config, weapons, "QueenBattleAxe", 3, 2200, 15, 662, 100);
 
-public class ModelCoin extends ModelBase {
-   private float wingspeed = 1.0F;
-   ModelRenderer Shape1;
 
-   public ModelCoin(float f1) {
-      this.wingspeed = f1;
-      this.field_78090_t = 512;
-      this.field_78089_u = 512;
-      this.Shape1 = new ModelRenderer(this, 0, 0);
-      this.Shape1.func_78789_a(-128.0F, -128.0F, 0.0F, 256, 256, 1);
-      this.Shape1.func_78793_a(0.0F, -109.0F, 0.0F);
-      this.Shape1.func_78787_b(512, 512);
-      this.Shape1.field_78809_i = true;
-      this.setRotation(this.Shape1, 0.0F, 0.0F, 0.0F);
-   }
 
-   public void func_78088_a(Entity entity, float f, float f1, float f2, float f3, float f4, float f5) {
-      super.func_78088_a(entity, f, f1, f2, f3, f4, f5);
-      this.func_78087_a(f, f1, f2, f3, f4, f5, entity);
-      float newangle = 0.0F;
-      newangle = MathHelper.func_76134_b(f2 * 0.05F * this.wingspeed) * 3.1415927F;
-      this.Shape1.field_78796_g = newangle;
-      this.Shape1.func_78785_a(f5);
-   }
+  private WeaponStats get_weaponstats(Configuration config, String arm, String s, int harvest, int maxuses, int efficiency, int damage, int enchantability)
 
-   private void setRotation(ModelRenderer model, float x, float y, float z) {
-      model.field_78795_f = x;
-      model.field_78796_g = y;
-      model.field_78808_h = z;
-   }
-
-   public void func_78087_a(float par1, float par2, float par3, float par4, float par5, float par6, Entity par7Entity) {
-      super.func_78087_a(par1, par2, par3, par4, par5, par6, par7Entity);
-   }
-}
+generate item definitions for these items

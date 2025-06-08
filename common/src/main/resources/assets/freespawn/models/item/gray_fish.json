@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "freespawn:item/grey_fish"
+    "layer0": "freespawn:item/gray_fish"
   }
 }
