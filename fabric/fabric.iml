@@ -599,7 +599,9 @@
           <root url="jar:///home/irontom10/git/freespawn/.gradle/loom-cache/minecraftMaven/net/minecraft/minecraft-merged-9b38c06a74/1.20.1-loom.mappings.1_20_1.layered+hash.40359-v2/minecraft-merged-9b38c06a74-1.20.1-loom.mappings.1_20_1.layered+hash.40359-v2.jar!/"/>
         </CLASSES>
         <JAVADOC/>
-        <SOURCES/>
+        <SOURCES>
+          <root url="jar:///home/irontom10/git/freespawn/.gradle/loom-cache/minecraftMaven/net/minecraft/minecraft-merged-9b38c06a74/1.20.1-loom.mappings.1_20_1.layered+hash.40359-v2/minecraft-merged-9b38c06a74-1.20.1-loom.mappings.1_20_1.layered+hash.40359-v2-sources.jar!/"/>
+        </SOURCES>
       </library>
     </orderEntry>
     <orderEntry type="module-library">
