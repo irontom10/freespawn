@@ -12,6 +12,5 @@ public final class main {
     public static void init() {
         ITEMS.register();
         ModItems.register();
-        // Write common init code here.
     }
 }

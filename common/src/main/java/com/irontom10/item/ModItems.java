@@ -1,5 +1,8 @@
 package com.irontom10.item;
 
+import com.irontom10.item.tools.*;
+
+
 import dev.architectury.registry.registries.DeferredRegister;
 import dev.architectury.registry.registries.RegistrySupplier;
 import net.minecraft.world.item.*;
@@ -167,9 +170,23 @@ public class ModItems {
 
     //Weapons
 
-    public static final RegistrySupplier<Item> ULTIMATE_SWORD = ITEMS.register("ultimate_sword",
-            () -> new SwordItem(Tiers.NETHERITE, 35, -2F,
-                    new Item.Properties().arch$tab(CreativeModeTabs.COMBAT)));
+    public static final RegistrySupplier<Item> ULTIMATE_SWORD =
+            ITEMS.register("ultimate_sword",
+                    UltimateSword::new
+            );
+
+    public static final RegistrySupplier<Item> ULTIMATE_PICKAXE =
+            ITEMS.register("ultimate_pickaxe",
+                    UltimatePickaxe::new
+            );
+    public static final RegistrySupplier<Item> ULTIMATE_AXE =
+            ITEMS.register("ultimate_axe",
+                    UltimateAxe::new
+            );
+    public static final RegistrySupplier<Item> ULTIMATE_FISHING_ROD =
+            ITEMS.register("ultimate_fishing_rod", UltimateFishingRod::new);
+
+
     /*
     public static final RegistrySupplier<Item> NIGHTMARE_SWORD = ITEMS.register("nightmare_sword",
             () -> new SwordItem(nightmare_stats, 12, -2.4F,
