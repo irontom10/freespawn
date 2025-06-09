@@ -7,7 +7,7 @@ import net.minecraft.world.item.crafting.Ingredient;
 
 import java.util.function.Supplier;
 
-import static com.irontom10.main.MOD_ID;
+import static com.irontom10.FreespawnMod.MOD_ID;
 
 public enum ModArmorMaterials implements ArmorMaterial {
     //ARMOR DEFINITIONS

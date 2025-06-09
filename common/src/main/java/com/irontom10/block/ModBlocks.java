@@ -1,16 +1,15 @@
 package com.irontom10.block;
 
-import com.irontom10.main;
+import com.irontom10.FreespawnMod;
 import dev.architectury.registry.registries.DeferredRegister;
 import dev.architectury.registry.registries.RegistrySupplier;
 import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.LeavesBlock;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 
 public class ModBlocks {
     public static final DeferredRegister<Block> BLOCKS =
-            DeferredRegister.create(main.MOD_ID, net.minecraft.core.registries.Registries.BLOCK);
+            DeferredRegister.create(FreespawnMod.MOD_ID, net.minecraft.core.registries.Registries.BLOCK);
 
 
     // example block
