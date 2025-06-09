@@ -1,7 +1,8 @@
 package com.irontom10;
 
+import com.irontom10.block.ModBlocks;
+import com.irontom10.item.ModCreativeModeTabs;
 import com.irontom10.item.ModItems;
-import com.irontom10.item.ModRecipeProvider;
 import dev.architectury.registry.registries.DeferredRegister;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.world.item.*;
@@ -13,5 +14,7 @@ public final class main {
     public static void init() {
         ITEMS.register();
         ModItems.register();
+        ModBlocks.register();
+        ModCreativeModeTabs.register();
     }
 }

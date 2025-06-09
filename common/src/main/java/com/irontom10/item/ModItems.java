@@ -1,10 +1,12 @@
 package com.irontom10.item;
 
+import com.irontom10.block.ModBlocks;
 import com.irontom10.item.armor.UltimateHelmet;
 import com.irontom10.item.armor.UltimateChestplate;
 import com.irontom10.item.armor.UltimateLeggings;
 import com.irontom10.item.armor.UltimateBoots;
 import com.irontom10.item.tools.*;
+import com.irontom10.item.speical.*;
 
 
 import dev.architectury.registry.registries.DeferredRegister;
@@ -136,7 +138,42 @@ public class ModItems {
     public static final RegistrySupplier<Item> LETTUCE = ITEMS.register("lettuce",
             () -> new Item(new Item.Properties().food(ModFoods.LETTUCE).arch$tab(CreativeModeTabs.FOOD_AND_DRINKS)));
 
+    //misc items
+    public static final RegistrySupplier<Item> MINERS_DREAM = ITEMS.register("miners_dream",
+            () -> new MinersDream(
+                    new Item.Properties()
+                            .stacksTo(16)
+                            .arch$tab(CreativeModeTabs.TOOLS_AND_UTILITIES)
+            )
+    );
+    public static final RegistrySupplier<Item> APPLE_TREE_SEED = ITEMS.register("apple_tree_seed",
+            () -> new com.irontom10.item.special.AppleSeed(new Item.Properties())
+    );
+    public static final RegistrySupplier<Item> CHERRY_TREE_SEED = ITEMS.register("cherry_tree_seed",
+            () -> new com.irontom10.item.special.CherrySeed(new Item.Properties())
+    );
+    public static final RegistrySupplier<Item> PEACH_TREE_SEED = ITEMS.register("peach_tree_seed",
+            () -> new com.irontom10.item.special.PeachSeed(new Item.Properties())
+    );
 
+    public static final RegistrySupplier<Item> APPLE_LEAVES = ITEMS.register("apple_leaves",
+            () -> new BlockItem(
+                    ModBlocks.APPLE_LEAVES.get(),
+                    new Item.Properties().arch$tab(CreativeModeTabs.BUILDING_BLOCKS)
+            )
+    );
+    public static final RegistrySupplier<Item> PEACH_LEAVES = ITEMS.register("peach_leaves",
+            () -> new BlockItem(
+                    ModBlocks.PEACH_LEAVES.get(),
+                    new Item.Properties().arch$tab(CreativeModeTabs.BUILDING_BLOCKS)
+            )
+    );
+    public static final RegistrySupplier<Item> CHERRY_LEAVES = ITEMS.register("cherry_leaves",
+            () -> new BlockItem(
+                    ModBlocks.CHERRY_LEAVES.get(),
+                    new Item.Properties().arch$tab(CreativeModeTabs.BUILDING_BLOCKS)
+            )
+    );
 
     // Ingredient items
     public static final RegistrySupplier<Item> AMETHYST = ITEMS.register(
@@ -166,6 +203,18 @@ public class ModItems {
     public static final RegistrySupplier<Item> RUBY = ITEMS.register(
             "ruby",
             () -> new Item(new Item.Properties().arch$tab(CreativeModeTabs.INGREDIENTS))
+    );
+    public static final RegistrySupplier<Item> RUBY_BLOCK = ITEMS.register("ruby_block",
+            () -> new BlockItem(
+                    ModBlocks.RUBY_BLOCK.get(),
+                    new Item.Properties().arch$tab(CreativeModeTabs.BUILDING_BLOCKS)
+            )
+    );
+    public static final RegistrySupplier<Item> RUBY_ORE = ITEMS.register("ruby_ore",
+            () -> new BlockItem(
+                    ModBlocks.RUBY_ORE.get(),
+                    new Item.Properties().arch$tab(CreativeModeTabs.BUILDING_BLOCKS)
+            )
     );
     public static final RegistrySupplier<Item> QUEEN_SCALE = ITEMS.register(
             "queen_scale",
@@ -353,7 +402,7 @@ public class ModItems {
             )
     );
     public static final RegistrySupplier<Item> EMERALD_LEGGINGS = ITEMS.register(
-            "lapis_leggings",
+            "emerald_leggings",
             () -> new ArmorItem(
                     ModArmorMaterials.EMERALD,
                     ArmorItem.Type.LEGGINGS,
