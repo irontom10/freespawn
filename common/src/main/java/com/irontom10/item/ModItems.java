@@ -1,5 +1,9 @@
 package com.irontom10.item;
 
+import com.irontom10.item.armor.UltimateHelmet;
+import com.irontom10.item.armor.UltimateChestplate;
+import com.irontom10.item.armor.UltimateLeggings;
+import com.irontom10.item.armor.UltimateBoots;
 import com.irontom10.item.tools.*;
 
 
@@ -167,6 +171,38 @@ public class ModItems {
             "queen_scale",
             () -> new Item(new Item.Properties().arch$tab(CreativeModeTabs.INGREDIENTS))
     );
+    public static final RegistrySupplier<Item> URANIUM_INGOT = ITEMS.register(
+            "uranium_ingot",
+            () -> new Item(new Item.Properties().arch$tab(CreativeModeTabs.INGREDIENTS))
+    );
+    public static final RegistrySupplier<Item> TITANIUM_INGOT = ITEMS.register(
+            "titanium_ingot",
+            () -> new Item(new Item.Properties().arch$tab(CreativeModeTabs.INGREDIENTS))
+    );
+    public static final RegistrySupplier<Item> TITANIUM_NUGGET = ITEMS.register(
+            "titanium_nugget",
+            () -> new Item(new Item.Properties().arch$tab(CreativeModeTabs.INGREDIENTS))
+    );
+    public static final RegistrySupplier<Item> URANIUM_NUGGET = ITEMS.register(
+            "uranium_nugget",
+            () -> new Item(new Item.Properties().arch$tab(CreativeModeTabs.INGREDIENTS))
+    );
+    public static final RegistrySupplier<Item> TITANIUM_BLOCK = ITEMS.register(
+            "titanium_block",
+            () -> new Item(new Item.Properties().arch$tab(CreativeModeTabs.BUILDING_BLOCKS))
+    );
+    public static final RegistrySupplier<Item> URANIUM_BLOCK = ITEMS.register(
+            "uranium_block",
+            () -> new Item(new Item.Properties().arch$tab(CreativeModeTabs.BUILDING_BLOCKS))
+    );
+    public static final RegistrySupplier<Item> URANIUM_ORE = ITEMS.register(
+            "uranium_ore",
+            () -> new Item(new Item.Properties().arch$tab(CreativeModeTabs.BUILDING_BLOCKS))
+    );
+    public static final RegistrySupplier<Item> TITANIUM_ORE = ITEMS.register(
+            "titanium_ore",
+            () -> new Item(new Item.Properties().arch$tab(CreativeModeTabs.BUILDING_BLOCKS))
+    );
 
     //Weapons
 
@@ -183,8 +219,25 @@ public class ModItems {
             ITEMS.register("ultimate_axe",
                     UltimateAxe::new
             );
-    public static final RegistrySupplier<Item> ULTIMATE_FISHING_ROD =
-            ITEMS.register("ultimate_fishing_rod", UltimateFishingRod::new);
+
+    public static final RegistrySupplier<Item> ULTIMATE_HOE =
+            ITEMS.register("ultimate_hoe", UltimateHoe::new);
+
+    public static final RegistrySupplier<Item> ULTIMATE_SHOVEL =
+            ITEMS.register("ultimate_shovel", UltimateShovel::new);
+
+    public static final RegistrySupplier<Item> ULTIMATE_HELMET =
+            ITEMS.register("ultimate_helmet", UltimateHelmet::new);
+
+    public static final RegistrySupplier<Item> ULTIMATE_CHESTPLATE =
+            ITEMS.register("ultimate_chestplate", UltimateChestplate::new);
+
+    public static final RegistrySupplier<Item> ULTIMATE_LEGGINGS =
+            ITEMS.register("ultimate_leggings", UltimateLeggings::new);
+
+    public static final RegistrySupplier<Item> ULTIMATE_BOOTS =
+            ITEMS.register("ultimate_boots", UltimateBoots::new);
+
 
 
     /*
@@ -461,42 +514,42 @@ public class ModItems {
 
             )
     );
-    public static final RegistrySupplier<Item> ULTIMATE_HELMET = ITEMS.register(
-            "ultimate_helmet",
-            () -> new ArmorItem(
-                    ModArmorMaterials.ULTIMATE,
-                    ArmorItem.Type.HELMET,
-                    new Item.Properties() .arch$tab(CreativeModeTabs.COMBAT)
-
-            )
-    );
-    public static final RegistrySupplier<Item> ULTIMATE_CHESTPLATE = ITEMS.register(
-            "ultimate_chestplate",
-            () -> new ArmorItem(
-                    ModArmorMaterials.ULTIMATE,
-                    ArmorItem.Type.CHESTPLATE,
-                    new Item.Properties() .arch$tab(CreativeModeTabs.COMBAT)
-
-            )
-    );
-    public static final RegistrySupplier<Item> ULTIMATE_LEGGINGS = ITEMS.register(
-            "ultimate_leggings",
-            () -> new ArmorItem(
-                    ModArmorMaterials.ULTIMATE,
-                    ArmorItem.Type.LEGGINGS,
-                    new Item.Properties() .arch$tab(CreativeModeTabs.COMBAT)
-
-            )
-    );
-    public static final RegistrySupplier<Item> ULTIMATE_BOOTS = ITEMS.register(
-            "ultimate_boots",
-            () -> new ArmorItem(
-                    ModArmorMaterials.ULTIMATE,
-                    ArmorItem.Type.BOOTS,
-                    new Item.Properties() .arch$tab(CreativeModeTabs.COMBAT)
-
-            )
-    );
+//    public static final RegistrySupplier<Item> ULTIMATE_HELMET = ITEMS.register(
+//            "ultimate_helmet",
+//            () -> new ArmorItem(
+//                    ModArmorMaterials.ULTIMATE,
+//                    ArmorItem.Type.HELMET,
+//                    new Item.Properties() .arch$tab(CreativeModeTabs.COMBAT)
+//
+//            )
+//    );
+//    public static final RegistrySupplier<Item> ULTIMATE_CHESTPLATE = ITEMS.register(
+//            "ultimate_chestplate",
+//            () -> new ArmorItem(
+//                    ModArmorMaterials.ULTIMATE,
+//                    ArmorItem.Type.CHESTPLATE,
+//                    new Item.Properties() .arch$tab(CreativeModeTabs.COMBAT)
+//
+//            )
+//    );
+//    public static final RegistrySupplier<Item> ULTIMATE_LEGGINGS = ITEMS.register(
+//            "ultimate_leggings",
+//            () -> new ArmorItem(
+//                    ModArmorMaterials.ULTIMATE,
+//                    ArmorItem.Type.LEGGINGS,
+//                    new Item.Properties() .arch$tab(CreativeModeTabs.COMBAT)
+//
+//            )
+//    );
+//    public static final RegistrySupplier<Item> ULTIMATE_BOOTS = ITEMS.register(
+//            "ultimate_boots",
+//            () -> new ArmorItem(
+//                    ModArmorMaterials.ULTIMATE,
+//                    ArmorItem.Type.BOOTS,
+//                    new Item.Properties() .arch$tab(CreativeModeTabs.COMBAT)
+//
+//            )
+//    );
     public static final RegistrySupplier<Item> PINK_TOURMAILINE_HELMET = ITEMS.register(
             "pink_tourmailine_helmet",
             () -> new ArmorItem(

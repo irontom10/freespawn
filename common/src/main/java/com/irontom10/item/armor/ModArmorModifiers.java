@@ -1,4 +1,4 @@
-package com.irontom10.item;
+package com.irontom10.item.armor;
 
 import net.minecraft.world.item.ArmorItem;
 import net.minecraft.world.item.ArmorMaterial;
